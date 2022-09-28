@@ -1,22 +1,82 @@
 /* -------------- Class CSS ------------------ */
+.author{
+    background-color: antiquewhite;
+}
+
+.about-author{
+    color:rgb(11, 16, 46)
+}
+
+
+.overview{
+    background-color: rgb(213, 230, 236);
+}
+
+.overview-font{
+    font-size: 20px;
+}
+
+.showcase{
+    background-color: rgb(142, 185, 237); /*Change color*/
+}
 
 .nb-bg-color{
-    background-color: #076787;    
+    background-color: #076787;      
+}
+
+.footer{
+    background-color: rgb(35, 35, 94);
+}
+
+.icon-white{
+    color: rgb(161, 159, 159);   /*change color*/
+}
+
+.icon-white:hover{
+    color:rgb(71, 153, 211);
+}
+
+.card-img-top{
+    margin-top: 25px;
+    border-radius: 5%;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 7%;
+    background-color: #f7efef;
 }
 
 
 
-
-
 /* -------------- ID CSS ------------------ */
+
 #nBMenuItem{
     font-size: 25px;
     padding-right: 20px;
     padding-left: 20px;
 }
 
+div#about{
+    width: 525px;
+    margin:auto;
+}
 
+h1#ovPadLeft{
+    padding-left: 20px;
+}
 
+p#ovPadLeft{
+    padding-left: 20px;
+}
+
+h1#ovPadRight{
+    padding-right: 20px;
+}
+
+p#ovPadRight{
+    padding-right: 20px;
+}
 
 
 
