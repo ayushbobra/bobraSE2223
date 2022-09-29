@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark nb-bg-color">
         <div class="container">
             <a href="index.html" class="navbar-brand">
-                <img src="csewebsitelogo_1_25.png" alt="Website Logo" class="d-inline-block align-text-top w-25"> 
+                <img src="csewebsitelogo_1_25.png" alt="Website Logo" class="d-inline-block align-text-top w-25" id="websitelogo"> 
             </a>
 
         <!--Hamburger Menu Button-->
@@ -31,10 +31,10 @@
             <!--Links to hamburger menu button-->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="author.html" class="nav-link hover-underline-animation" id="nBMenuItem">Author</a>
+                    <a href="author.html" class="nav-link hover-underline-animation" id="nBMenuItem">Authors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="procedure.html" class="nav-link hover-underline-animation" id="nBMenuItem">Procedure</a>
+                    <a href="procedure.html" class="nav-link hover-underline-animation selected" id="nBMenuItem">Procedure</a>
                 </li>
                 <li class="nav-item">
                     <a href="results.html" class="nav-link hover-underline-animation" id="nBMenuItem">Results</a>
@@ -47,16 +47,25 @@
     </nav>
 
     <!-- Procedure Steps -->
+
     <section class="overview text-dark p-2 text-left">
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 p-3">
+                    <h1 id="procedureHeader">Procedure</h1>
+                    <img class="img-fluid" src="flowchart.PNG"  alt="Flowchart graphic" id="flowchart">     
+                </div> 
+            </div>
+
+            <!--
+            <div class="row">
                 <div class="col-sm-8 p-3">
                     <h1 id="ovPadRight">Step 1</h1>
                     <p class="lead overview-font" id="ovPadRight">ADD TEXT HERE
                     </p>    
                 </div>
                 <div class="col-sm-4 p-3">
-                    <img class="img-fluid" src=""  alt="">  <!--ADD IMAGE-->
+                    <img class="img-fluid" src=""  alt="">  
                 </div> 
             </div>
 
@@ -67,24 +76,120 @@
                     </p>    
                 </div>
                 <div class="col-sm-4 p-3">
-                    <img class="img-fluid" src=""  alt="">  <!--ADD IMAGE-->
+                    <img class="img-fluid" src=""  alt="">  
                 </div> 
-            </div>
-
-            <div class="row">
-                <div class="col-sm-8 p-3">
-                    <h1 id="ovPadRight">Step 1</h1>
-                    <p class="lead overview-font" id="ovPadRight">ADD TEXT HERE
-                    </p>    
-                </div>
-                <div class="col-sm-4 p-3">
-                    <img class="img-fluid" src=""  alt="">  <!--ADD IMAGE-->
-                </div> 
-            </div>
+            </div> 
+            -->
             
 
         </div>
     </section>
+
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Step 1 - Setting Up the Bin
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="lead overview-font" id="ovPadRight">Three Design Small Latching Totes (7-gallon size) were purchased from the Home Depot in Morganville, New Jersey. These totes were used as the 3 bins for the experiment. The numbers 5, 6, and 7 were written on 3 Post-It notes using a black Sharpie marker and placed on the three bins, with one on each bin. Using a piece of chalk and a ruler, dots were marked on each of the 3 lids to lay out the pattern for the air holes. After all 3 lids were marked with chalk, a 1/8” drill bit was twisted into a Black and Decker All-Purpose Drill. The drill was then used to drill holes in the lids at each dot marked. This process was then repeated for each hole in the three lids.
+                            <br> 
+                            As seen in the picture, all the air holes were evenly spaced. Each hole was 2” from the inside edge of the lid, and all the holes were spaced 3” apart from each other. Each hole also had a diameter of 1/8”. There were 12 holes in each of the three lids. After all the holes were drilled, any plastic shavings were discarded in the trash bin.
+                        </p>    
+                    </div>
+                    <div class="col-sm-4 p-2">
+                        <img class="img-fluid w-75 extraPadding" src="binholelayout.PNG"  alt="Bin Hole Layout">  
+                    </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Step 2 - Adding Material to the Bins
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="lead overview-font" id="ovPadRight">Earthworms prefer loose, loamy soil, so peat moss and worm bedding were used in each bin. This also mimicked the soil that earthworms would be found in their natural environment. To add material to the bins, two 10-quart bags of Hoffman Canadian Sphagnum Peat Moss and two 4-pound bags of Frabill Super-GRO Worm Bedding were purchased from Amazon. The SONKIR Soil pH Meter, 3-in-1 Soil Moisture/Light/pH Tester was also purchased from Amazon. Finally, disposable LANON Latex Gloves were used to maintain cleanliness.
+                        </p>    
+                    </div>
+                    <div class="col-sm-4 p-1">
+                        <img class="img-fluid w-75" src="binswithsoil.PNG"  alt="Bins with soil in them">  
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="lead overview-font" id="ovPadRight">
+                            Initially, using a plastic measuring cup, 1 liter of peat moss and 1 liter of the bedding were poured into bin 5. The SONKIR Soil Tester was then switched to pH mode and placed 4 inches deep into the soil. This was done to gain an initial estimate of what the pH was. After placing the soil tester in the bin and waiting 10 minutes, the pH meter gave a reading slightly less than 6. Since the target pH of bin 5 was a pH of 5, and peat moss was the acidifying agent, more peat moss had to be added to the bin. Another liter of peat moss was added to the bin and another pH reading was taken using the SONKIR soil tester. If the pH reading was more acidic (a lower number) than the target pH, another liter of bedding was added. If the pH reading was more alkaline (a higher number) than the target pH, another liter of peat moss was added. This process was repeated until the soil tester gave a reading of five, which was the desired pH. The final balance for bin 5 was 6 liters of peat moss and 3 liters of bedding.
+                            <br>
+                            After this, the process was repeated for bins 6 and 7. Starting with 1 liter of peat moss and 1 liter of bedding, either peat moss or the bedding was added in 1 liter increments depending on the pH reading. For bin 6, the final balance was 3 liters of peat moss and 4 liters of bedding. For bin 7, the final balance was 1.5 liters of peat moss and 6 liters of bedding.After the right balance of peat moss and bedding was obtained for each bin, the two materials were mixed by hand again to ensure that they had been fully integrated. 
+                        </p>    
+                    </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Step 3 - Adding Earthworm Eggs to the Bins
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+            <div class="accordion-body">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <p class="lead overview-font" id="ovPadRight">100 European nightcrawler (<em>Eisenia hortensis</em>) eggs were purchased from Midwest Worms. Using a different pair of disposable LANON Latex Gloves (to maintain cleanliness and prevent any oils on the hand from touching the eggs), 20 eggs were placed at the top of each of the 3 bins. The picture shows one of the eggs in bin 5 on the top layer of the soil. After all the eggs had been placed, pictures of the eggs were taken. The soil was then mixed with the eggs and the eggs were spread around such that the eggs were distributed evenly in the soil. The other 40 eggs were disposed of in a wooded area outside the researcher’s home.
+                        </p>    
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-fluid w-75" src="earthwormegg.PNG"  alt="Earthworm egg in soil">  
+                    </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Step 4 - Maintenance and Data Collection
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+              <div class="accordion-body">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <p class="lead overview-font" id="ovPadRight">The bins were kept on the floor of a basement closet in the researcher’s house until the conclusion of the experimental procedure. Earthworms have adverse reactions to light and are sensitive to it. Because of this, the closet’s lights were kept off, and the bins were never exposed to light besides the data collection period. 
+                            <br>
+                            The experimental period started on October 27th, 2021. Every day, using a measuring cup, 500 milliliters (mL) of water were poured into each bin by pouring distilled water from plastic gallon jugs into the measuring cup. The water was then poured evenly across the surface of the soil. About an hour later, the bins’ moisture and pH content were then checked using the SONKIR Soil Tester. As shown in Figure 3, the soil tester had a “moist” range for the moisture meter. The bins were checked to make sure that their moisture was at least in the “moist” range. Otherwise, an additional 250 mL of water was added afterward. If the bin was too moist, only about 250 mL was added the following day and the moisture level was reassessed. 
+                            After testing moisture, the pH of each bin was tested every day. The soil tester was once again stuck into the soil roughly 4 inches and left for 10 minutes.                             
+                        </p>    
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-fluid w-75" src="phReading.PNG"  alt="pH Reading of Soil">  
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="lead overview-font" id="ovPadRight">After this, more peat moss or bedding was added to the bin depending on what the pH reading was. This was continued until the bin’s pH reading matched the desired pH. After the worms hatched, the process of maintaining the bins continued. No feeding was necessary, since the earthworms were able to survive off of the materials in the bedding and peat moss. The bedding contained various amounts of organic matter, including newspaper, aged compost and hay. The worms could feed off of this and the organic matter in the peat moss.
+                            <br>
+                            Every day, using latex gloves, the soil was sifted through in each of the three bins to look for eggs and worms. Pictures of eggs and worms were taken whenever they were found (see Figures 8-10). Any observations on the physical appearance of the eggs and worms were also documented. The number of worms in each bin was recorded every day. All maintenance of the bins and data collection was done in the basement of the researcher’s home.                            
+                        </p>    
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
 
     <!-- Footer (Requires Bootstrap Icons CSS)-->
     <footer class="p-5 footer text-light text-center position-relative">
