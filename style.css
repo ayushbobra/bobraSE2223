@@ -1,3 +1,5 @@
+/* -------------- Fonts --------------------- */
+
 @font-face {
     font-family: 'quicksand';
     src: url("Quicksand-Regular.otf");
@@ -8,34 +10,30 @@
     src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
+/* -------------- Element CSS ---------------- */
+
 li{
     font-size: 19px;
     font-family: "montserrat";
 }
 
 /* -------------- Class CSS ------------------ */
+
+/*Navbar*/
 .nav-item{
     font-family:'quicksand';
 }
 
-.author{
-    background-color: rgb(218, 237, 252);
+.nb-bg-color{
+    background-color: #05465c;      
 }
 
-.about-author{
-    color:rgb(11, 16, 46)
+.selected{
+    background-color: rgb(139, 203, 233);
+    color:rgb(17, 79, 123) !important;
 }
 
-
-.overview{
-    background-color: rgb(221, 233, 243);
-}
-
-.overview-font{
-    font-size: 19px;
-    font-weight: 400;
-}
-
+/*Home*/
 .showcase{
     background-color: rgb(199, 215, 234); 
 }
@@ -49,13 +47,18 @@ h1.display-2{
     line-height: 58pt;
 }
 
+.overview{
+    background-color: rgb(221, 233, 243);
+}
+
+.overview-font{
+    font-size: 19px;
+    font-weight: 400;
+}
+
 .secHeader{
     font-family: 'montserrat';
     font-weight: 500;
-}
-
-.nb-bg-color{
-    background-color: #05465c;      
 }
 
 .footer{
@@ -68,6 +71,16 @@ h1.display-2{
 
 .icon-white:hover{
     color:rgb(71, 153, 211);
+}
+
+
+/*Authors*/
+.author{
+    background-color: rgb(218, 237, 252);
+}
+
+.about-author{
+    color:rgb(11, 16, 46)
 }
 
 .card-img-top{
@@ -94,9 +107,11 @@ h1.display-2{
     transform: scale(1.1);
 }
 
-.selected{
-    background-color: rgb(139, 203, 233);
-    color:rgb(17, 79, 123) !important;
+
+/*Procedure*/
+.procedureTop{
+    background-image: url("bluepolygon.png");
+    padding-top: 15px;
 }
 
 .accordion{
@@ -112,9 +127,8 @@ h1.display-2{
     font-size: 22px;
 }
 
-.procedureTop{
-    background-image: url("bluepolygon.png");
-    padding-top: 15px;
+.accordion-body{
+    background-color: rgb(247, 249, 255);
 }
 
 .stepList{
@@ -125,6 +139,25 @@ h1.display-2{
 
 /* -------------- ID CSS ------------------ */
 
+/*Navbar*/
+#nBMenuItem{
+    font-size: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#websitelogo{
+    background-color: rgb(202, 224, 249);
+    border-radius: 10%;
+}
+
+#websitelogo:hover{
+    background-color: rgb(147, 209, 245);
+    border-radius: 10%;
+    transform: scale(1.1);
+}
+
+/*Home*/
 #bottomBorderNeeded{
     border-bottom: 1px solid rgb(26, 53, 128);
 }
@@ -133,15 +166,8 @@ h1.display-2{
     font-weight: 100;
 }
 
-#nBMenuItem{
-    font-size: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-div#about{
-    width: 525px;
-    margin:auto;
+#showcaseimg{
+    border: 4px solid white;
 }
 
 h1#ovPadLeft{
@@ -160,21 +186,15 @@ p#ovPadRight{
     padding-right: 20px;
 }
 
-#showcaseimg{
-    border: 4px solid white;
+
+/*Author*/
+div#about{
+    width: 525px;
+    margin:auto;
 }
 
-#websitelogo{
-    background-color: rgb(202, 224, 249);
-    border-radius: 10%;
-}
 
-#websitelogo:hover{
-    background-color: rgb(147, 209, 245);
-    border-radius: 10%;
-    transform: scale(1.1);
-}
-
+/*Procedure*/
 #procedureHeader{
     text-align: center;
     font-size: 55px;
