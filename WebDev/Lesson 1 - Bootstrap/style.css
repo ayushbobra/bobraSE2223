@@ -8,6 +8,11 @@
     src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
+li{
+    font-size: 19px;
+    font-family: "montserrat";
+}
+
 /* -------------- Class CSS ------------------ */
 .nav-item{
     font-family:'quicksand';
@@ -107,13 +112,15 @@ h1.display-2{
     font-size: 22px;
 }
 
-.extraPadding{
-    padding-left:30px;
-}
-
 .procedureTop{
     background-image: url("bluepolygon.png");
     padding-top: 15px;
+}
+
+.stepList{
+    line-height: 50px;
+    margin-left: 15px;
+    margin-top: 8px;
 }
 
 /* -------------- ID CSS ------------------ */
@@ -164,7 +171,7 @@ p#ovPadRight{
 
 #websitelogo:hover{
     background-color: rgb(147, 209, 245);
-    border-radius: 0%;
+    border-radius: 10%;
     transform: scale(1.1);
 }
 
