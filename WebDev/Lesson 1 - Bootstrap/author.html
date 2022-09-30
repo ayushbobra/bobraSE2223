@@ -31,13 +31,13 @@
             <!--Links to hamburger menu button-->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="author.html" class="nav-link hover-underline-animation" id="nBMenuItem">AUTHORS</a>
+                    <a href="author.html" class="nav-link hover-underline-animation selected" id="nBMenuItem">AUTHORS</a>
                 </li>
                 <li class="nav-item">
                     <a href="procedure.html" class="nav-link hover-underline-animation" id="nBMenuItem">PROCEDURE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="results.html" class="nav-link hover-underline-animation selected" id="nBMenuItem">RESULTS</a>
+                    <a href="results.html" class="nav-link hover-underline-animation" id="nBMenuItem">RESULTS</a>
                 </li>
             </ul>
 
@@ -46,29 +46,44 @@
         </div>
     </nav>
 
+    <!--About the Author-->
+    <section class="author">
+        <div class="container">
+            <br>
+            <h1 class="text-center about-author">About the Authors</h1>
+            <hr><br> <!--horizontal line and line break-->
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+            
+            <!--cards organized in a 2x2 table format-->
 
+            <div class="row row-cols-1 row-cols-md-2 g-4 cards">
+                <div class="col">
+                    <div class="card" id="about">
+                        <img src="ayushpicture.PNG" class="card-img-top mx-auto w-50 hoverScale" alt="Picture of Ayush"> 
+                        <div class="card-body">
+                            <h4 class="card-title">Ayush Bobra</h4>
+                            <h5>Student</h5>
+                            <p class="card-text">Currently a junior at High Technology High School in Lincroft, NJ. Carried out the research project for the Research Practicum class. Won awards for the research at Jershey Shore Science Fair and Delaware Valley Science Fair.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" id="about">
+                        <img src="msbabbin.PNG" class="card-img-top mx-auto w-50" alt="Picture of Ms. Babbin"> 
+                        <div class="card-body">
+                            <h4 class="card-title">Aimee Babbin</h4>
+                            <h5>Mentor</h5>
+                            <p class="card-text">Currently a teacher at High Technology High School for Introduction to Research, Research Practicum, Physics, and AP Chemistry. Mentored the student researcher. Consulted with the student researcher to check progress and offer suggestions.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </section>
 
     <!-- Footer (Requires Bootstrap Icons CSS)-->
     <footer class="p-5 footer text-light text-center position-relative">
