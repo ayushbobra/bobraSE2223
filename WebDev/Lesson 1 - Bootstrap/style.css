@@ -1,6 +1,20 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url("Quicksand-Regular.otf");
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
 /* -------------- Class CSS ------------------ */
+.nav-item{
+    font-family:'quicksand';
+}
+
 .author{
-    background-color: rgb(251, 243, 232);
+    background-color: rgb(218, 237, 252);
 }
 
 .about-author{
@@ -30,8 +44,13 @@ h1.display-2{
     line-height: 58pt;
 }
 
+.secHeader{
+    font-family: 'montserrat';
+    font-weight: 500;
+}
+
 .nb-bg-color{
-    background-color: #065772;      
+    background-color: #05465c;      
 }
 
 .footer{
@@ -66,9 +85,13 @@ h1.display-2{
     padding-bottom: 45px;
 }
 
+.card:hover{
+    transform: scale(1.1);
+}
+
 .selected{
     background-color: rgb(139, 203, 233);
-    color:rgb(17, 86, 135) !important;
+    color:rgb(17, 79, 123) !important;
 }
 
 .accordion{
@@ -104,7 +127,7 @@ h1.display-2{
 }
 
 #nBMenuItem{
-    font-size: 25px;
+    font-size: 30px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -140,8 +163,9 @@ p#ovPadRight{
 }
 
 #websitelogo:hover{
-    background-color: rgb(147, 193, 245);
+    background-color: rgb(147, 209, 245);
     border-radius: 0%;
+    transform: scale(1.1);
 }
 
 #procedureHeader{
@@ -203,3 +227,4 @@ p#ovPadRight{
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
 }
+
