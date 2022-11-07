@@ -26,7 +26,6 @@ async function getData() {
         const sHtemp = parseFloat(columns[3]);      // southern hemisphere temp deviation
         bin7.push(sHtemp);
     });
-    console.log(days);
     return {days, bin5, bin6, bin7};
 }
 
