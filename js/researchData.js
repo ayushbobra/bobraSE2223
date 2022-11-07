@@ -3,7 +3,7 @@
 // Parse the CSV data into the necessary arrays
 
 async function getData() {
-    const response = await fetch('../data/researchData.csv');
+    const response = await fetch('data/researchData.csv');
     const data = await response.text();  // Get the CSV data in TEXT format
 
     const days = []; //x-axis labels = years
