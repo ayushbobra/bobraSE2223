@@ -47,8 +47,8 @@ const myChart = new Chart(ctx, {
             {
                 label: 'Number of Earthworms in Bin 6',
                 data: data.bin6,
-                backgroundColor: 'rgba(87, 255, 145, 0.2)',
-                borderColor: 'rgba(87, 255, 145, 1)',
+                backgroundColor: 'rgba(36, 201, 4, 0.2)',
+                borderColor: 'rgba(36, 201, 4, 1)',
                 borderWidth: 1
             },
             {
@@ -106,3 +106,4 @@ const myChart = new Chart(ctx, {
 }
 
 createChart();
+
