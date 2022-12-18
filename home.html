@@ -21,7 +21,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="js/home.js" defer></script>
 </head>
-<body>
+<body class="homePage">
     <!-- Navbar -->
     
     <nav class="navbar navbar-expand-lg navbar-dark nb-bg-color">
@@ -47,13 +47,13 @@
                         <a href="procedure.html" class="nav-link hover-underline-animation" id="nBMenuItem">PROCEDURE</a>
                     </li>
                     <li class="nav-item">
-                        <a href="results.html" class="nav-link hover-underline-animation" id="nBMenuItem">RESULTS</a>
+                        <a href="results.html" class="nav-link hover-underline-animation" id="nBMenuItem" style="margin-right: 23px;">RESULTS</a>
                     </li>
                     <li class="nav-item">
-                        <a  id="userLink" class="nav-link hover-underline-animation" href="">User Name</a>
+                        <a  id="userLink" class="nav-link hover-underline-animation selected homeNBbutton" href="">User Name</a>
                     </li>
                     <li class="nav-item">
-                        <a  id="signOut" class="nav-link hover-underline-animation" href="">SIGN OUT</a>
+                        <a  id="signOut" class="nav-link hover-underline-animation selected homeNBbutton" href="">SIGN OUT</a>
                     </li>
                 </ul>
             </div>
@@ -71,8 +71,8 @@
 
     <!--Firebase Data Operations -->
     <!--Set and Update Data-->
-    <div class="container border">
-        <br><h2>Set & Update Data</h2><br>
+    <div class="container dataBox border">
+        <br><h2 id="homeHeader">Set & Update Data</h2><br>
         <ol class="list-group list-group-numbered notes">
             <li class="list-group-item border-0"><strong>Set</strong> - will completely overwrite all of the data stored at the node.</li>
             <li class="list-group-item border-0"><strong>Update</strong> - will only replace the fields that have changed at the node, or add new fields if they aren't present</li>
@@ -114,8 +114,8 @@
     </div><br>
 
     <!--Get a single datum -->
-    <div class="container border">
-        <br><h2>Get a Datum (single data point)</h2><br>
+    <div class="container dataBox border">
+        <br><h2 id="homeHeader">Get a Datum (single data point)</h2><br>
         <ol class="list-group list-group-numbered notes">
             <li class="list-group-item border-0">Retrieve a single datum from a node and display it in a table.</li>
         </ol><br>
@@ -172,8 +172,8 @@
     </div><br>
 
     <!--Get a data set -->
-    <div class="container border">
-        <br><h2>Get a Data Set</h2><br>
+    <div class="container dataBox border">
+        <br><h2 id="homeHeader">Get a Data Set</h2><br>
         <ol class="list-group list-group-numbered notes">
             <li class="list-group-item border-0">Retrieve an entire month's set of data and display in a table</li>
         </ol><br>
@@ -212,8 +212,8 @@
     </div><br>
 
     <!--Delete Data-->
-    <div class="container border">
-        <br><h2>Delete Data</h2><br>
+    <div class="container dataBox border">
+        <br><h2 id="homeHeader">Delete Data</h2><br>
         <ol class="list-group list-group-numbered notes">
             <li class="list-group-item border-0">This function will allow you to delete a single day's data</li>
             <li class="list-group-item border-0">To delete an entire month's data, you need to remove modify the directory path removing the 'day' part.</li>

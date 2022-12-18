@@ -144,6 +144,50 @@ h1.display-2{
     align-items: center;
 }
 
+.signInBox{
+    margin-top: 125px;
+    margin-bottom: 125px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'montserrat';
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 20px;
+    box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+}
+
+.signInPage{
+    /* background-color: rgb(210, 222, 238); */
+    background-size: 100%;
+    background-image: linear-gradient(to right top, #051937, #004770, #007c9e, #00b4b7, #12ebb9);
+}
+
+#signIn{
+    color: white;
+    background-color: rgb(31, 140, 179);
+    border-color: rgb(31, 140, 179);
+    border-width: 2px;
+}
+
+#signIn:hover{
+    color: rgb(31, 140, 179);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(31, 140, 179);
+}
+
+/*Home*/
+.homePage{
+    /* background-color: rgb(210, 222, 238); */
+    background-size: 100%;
+    background-image: linear-gradient(to right top, #b1e7fe, #bceafb, #c6ecf9, #d1eff7, #dcf1f6);
+}
+
+.dataBox{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+}
+
 /* -------------- ID CSS ------------------ */
 
 /*Navbar*/
@@ -170,7 +214,7 @@ h1.display-2{
     transform: scale(1.1);
 }
 
-/*Home*/
+/*Showcase*/
 #bottomBorderNeeded{
     border-bottom: 1px solid rgb(26, 53, 128);
 }
@@ -224,6 +268,18 @@ div#about{
     border: 1px solid rgb(168, 181, 227);
 }
 
+/*Home*/
+#userLink{
+    margin-right: 35px;
+}
+
+.hover-underline-animation.selected.homeNBbutton:hover{
+    background-color: rgb(167, 214, 235);
+}
+
+#welcome, #homeHeader{
+    font-family: 'montserrat'
+}
 
 /* -------------- Underline Animation CSS ------------------ */
 .hover-underline-animation {
