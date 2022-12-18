@@ -125,17 +125,61 @@ function getData(userID, bin, day) {
   });
 }
 
-// ---------------------------Get a month's data set --------------------------
-// Must be an async function because you need to get all the data from FRD
-// before you can process it for a table or graph
+// ---------------------------Get a bin's data set --------------------------
+// Must be an async function because you need to get all the data from FRD before you can process it for a table or graph
 
+async function getDataSet(userID, bin) {
+  let binVal = document.getElementById('setBinVal');
+  binVal.textContent = `Bin: ${bin}`;
+  const days = [];
+  const worms = [];
+  const tbodyEl = document.getElementById('tbody-2'); //selecting tbody element from table
+  const dbref = ref(db); //get reference to the database, firebase parameter required for the get function
+  //wait for the data to be retrieved from FRD
+  await get(child(dbref, 'users/' + userID + '/data/' + bin))
+  .then((snapshot) => {
+    if (snapshot.exists()){
+      snapshot.forEach((child) => {
+        days.push(child.key);
+        worms.push(child.val());
+      });
+    }
+    else {
+      alert("No data available");
+    }
+  })
+  .catch((error) => {
+    alert("Error: " + error);
+  });
+  tbodyEl.innerHTML = ''; //clear existing data from table
+  //dynamically add table rows to HTML
+  for (let i = 0; i < days.length; i++) {
+    addItemToTable(days[i], worms[i], tbodyEl);
+  }
+}
 
 // Add a item to the table of data
-
-
+function addItemToTable(day, worms, tbodyEl) {
+  const trEl = document.createElement('tr');
+  const dayEl = document.createElement('td');
+  const tempEl = document.createElement('td');
+  dayEl.innerHTML = day;
+  tempEl.innerHTML = worms;
+  trEl.appendChild(dayEl);
+  trEl.appendChild(tempEl);
+  tbodyEl.appendChild(trEl);
+}
 
 // -------------------------Delete a day's data from FRD ---------------------
-
+function deleteData(userID, bin, day) {
+  remove(ref(db, 'users/' + userID + '/data/' + bin + '/' + day))
+  .then(() => {
+    alert("Data successfully deleted!");
+  })
+  .catch((error) => {
+    alert("Error: " + error);
+  });
+}
 
 
 // --------------------------- Home Page Loading -----------------------------
@@ -206,8 +250,21 @@ window.onload = function() {
   };  
 
   // Get a data set function call
-  
+  document.getElementById("getDataSet").onclick = function() {
+    const year = document.getElementById("getSetBin").value;
+    const userID = currentUser.uid;
+
+    getDataSet(userID, year);
+
+  };  
 
   // Delete a single day's data function call
-  
+  document.getElementById("delete").onclick = function() {
+    const year = document.getElementById("delBin").value;
+    const day = document.getElementById("delDay").value;
+    const userID = currentUser.uid;
+
+    deleteData(userID, year, day);
+
+  };
 }

@@ -183,9 +183,13 @@ h1.display-2{
 }
 
 .dataBox{
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.83);
     border-radius: 20px;
     box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+}
+
+.list-group-item{
+    background-color: rgba(255,255,255,0) !important;
 }
 
 /* -------------- ID CSS ------------------ */
@@ -273,13 +277,31 @@ div#about{
     margin-right: 35px;
 }
 
+.hover-underline-animation.selected.homeNBbutton{
+    border-color: rgba(167, 214, 235, 0);
+}
+
 .hover-underline-animation.selected.homeNBbutton:hover{
     background-color: rgb(167, 214, 235);
+    border-color: rgba(167, 214, 235, 0);
 }
 
 #welcome, #homeHeader{
     font-family: 'montserrat'
 }
+
+#set, #get, #getDataSet, #delete{
+    border-color: rgb(8, 172, 232);
+    color: rgb(8, 172, 232);
+}
+
+#set:hover, #get:hover, #getDataSet:hover, #delete:hover{
+    border-color: rgb(8, 172, 232);
+    color: white;
+    background-color: rgb(8, 172, 232);
+}
+
+
 
 /* -------------- Underline Animation CSS ------------------ */
 .hover-underline-animation {
