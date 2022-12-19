@@ -189,7 +189,7 @@ window.onload = function() {
   // ------------------------- Set Welcome Message -------------------------
   getUsername();
   if(currentUser == null){
-    userLink.innerText = "Create New Account";
+    userLink.innerText = "Create Account";
     userLink.classList.replace("nav-link", "btn");
     userLink.classList.add("btn-primary"); //btn-primary specifies the color, can choose a different one
     userLink.href = "register.html";
